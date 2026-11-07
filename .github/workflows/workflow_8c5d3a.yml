@@ -1,0 +1,12 @@
+name: Build & Test
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-pipeline:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify setup
+        run: echo "finished"
